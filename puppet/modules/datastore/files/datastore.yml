@@ -1,0 +1,36 @@
+metis:
+  cache_connections: 0
+  cache_statements: 0
+  primary:
+    driver: Pg
+    host: express
+    database: metis
+    user: metis
+    password: mmpublic
+    schemas:
+      - public
+
+www:
+  cache_connections: 0
+  cache_statements: 0
+  primary:
+    driver: Pg
+    host: postgres
+    database: mediamatters
+    user: mediamatters
+    password: mmpublic
+    schemas:
+      - public
+
+c3slicehost:
+  cache_connections: 0
+  primary:
+    driver: Pg
+    database: mediamatters
+    user: mmfa_reader
+    password: mmpublic
+    host: 67.23.10.243
+    schemas:
+      - sitecontent
+      - traffic2
+      - public
